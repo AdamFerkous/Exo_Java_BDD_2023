@@ -50,14 +50,7 @@
 
 <h2>Exercice 2 : Affichage verticale</h2>
 <p>Ecrire le programme pour afficher le texte en vertical</br>
-Exemple : Bonjour</br>
-B</br>
-o</br>
-n</br>
-j</br>
-o</br>
-u</br>
-r</p>
+Mot : out.print(chaine.charAt(i));
 
 <%
     for(int i = 0; i < chaine.length(); i++) {
