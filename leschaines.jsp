@@ -4,7 +4,7 @@
 <html>
 <head>
 <title>Les chaines</title>
-</head>
+</head> 
 <body bgcolor=white>
 <h1>Exercices sur les chaines de charactères</h1>
 <form action="#" method="post">
