@@ -27,19 +27,17 @@
 
 <h2>Exercice 1 : Le carré d'étoiles</h2>
 <p>Ecrire le code afin de produire un carré d'étoile</p>
-<p> La valeur est <% out.print(x); %> </p>
 <%
-    for(int i = 0; i < x; i++){
-       for(int j = 0; j < x; j++){
-          out.print("*");
-       }
-       %></br><%
+    for (int i = 0; i < x; i++) {
+        for (int j = x - i; j > 0; j--) {
+            out.print("*");
+        }
+        out.println("<br/>");
     }
 %>
 
 <h2>Exercice 2 : Triangle rectangle gauche</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
-<p> La valeur est <% out.print(x); %> </p>
 <%
     for(int i = 0; i < x; i++){
        for(int j = 0; j < i + 1 ; j++){
@@ -51,50 +49,46 @@
 
 <h2>Exercice 3 : Triangle rectangle inversé</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
-<p> La valeur est <% out.print(x); %> </p>
 <%
-    for(int i = x; i > 0; i--){
-        for(int j = 0; j < i; j++){
+    for (int i = 0; i < x; i++) {
+        for (int j = 0; j <= i; j++) {
             out.print("*");
         }
-        %></br><%
+        out.println("<br/>");
     }
 %>
 
 <h2>Exercice 4 : Triangle rectangle 2</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
-<p> La valeur est <% out.print(x); %> </p>
 <%
-    for(int i = x; i > 0; i--){
-       for(int j = 1; j < i; j++){
-          %>&nbsp;&nbsp;<%
-       }
-       for (int k = i; k<=x; k++){
-          out.print("*");
-       }
-       %></br><%
+    for (int i = 0; i < x; i++) {
+        for (int j = 0; j < i; j++) {
+            %>&nbsp;&nbsp;<%
+        }
+        for (int k = i; k < x; k++) {
+            out.print("*");
+        }
+        out.println("<br/>");
     }
 %>
 
 <h2>Exercice 5 : Triangle isocele</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
-<p> La valeur est <% out.print(x); %> </p>
 <%
-    for(int i = 1; i <= x; i++){
-        for(int j = x-i; j > 0; j--){
-           %>&nbsp;<%
+    for (int i = 0; i < x; i++) {
+        for (int j = x - i; j > 0; j--) {
+            %>&nbsp;<%
         }
-        for (int k = 1; k<=i; k++){
-           out.print("*");
-           %>&nbsp;<%
+        for (int k = 0; k <= i; k++) {
+            out.print("*");
+            %>&nbsp;<%
         }
-        %></br><%
+        out.println("<br/>");
     }
 %>    
 
 <h2>Exercice 6 : Le demi losange</h2>
 <p>Ecrire le code afin de produire un losange</p>
-<p> La valeur est <% out.print(x); %> </p>
 <%
     for(int i = x; i > 0; i--){
            for(int j = 1; j < i; j++){
@@ -103,10 +97,10 @@
            for (int k = i; k<=x; k++){
               out.print("*");
            }
-           %></br><%
+        out.println("</br>");
         }
 
-        %></br><%
+        out.println("</br>");
 
 
         for(int a = 0; a < x; a++){
@@ -116,18 +110,16 @@
            for(int b = x; b > a; b--){
               out.print("*");
            }
-           %></br><%
+            out.println("<br/>");
         }
 %>
 <h2>Exercice 7 : La table de multiplication</h2>
 <p>Ecrire le code afin de créser une table de multiplication</p>
 <p> La valeur est <% out.print(x); %> </p>
 <%
-    for(int i = 1; i <= x; i++){
-       out.print(x + "*" + i + " =" ); 
-       out.print(x*i); 
-
-       %></br><%
+    for (int i = 1; i <= x; i++) {
+        out.print(x + "*" + i + " = " + x * i);
+        %><br/><%
     }
 %>
 
