@@ -50,7 +50,6 @@
 
 <h2>Exercice 2 : Affichage verticale</h2>
 <p>Ecrire le programme pour afficher le texte en vertical</br>
-Mot : <% out.print(chaine.charAt(i)); %>
 
 <%
     for(int i = 0; i < chaine.length(); i++) {
@@ -88,9 +87,7 @@ Lhvrsr lvex</p>
 %>
 
 <h2>Exercice 5 : La phrase en verlant</h2>
-<p>Ecrire le programme afin d'afficher le texte en verlant </br>
-Exemple : L'hiver sera pluvieux</br>
-xueivulp ares revih'l</p>
+<p>Ecrire le programme afin d'afficher le texte en verlant </br></p>
 <%
     for(int i = chaine.length() -1; i >= 0; i--) {
        out.print(chaine.charAt(i));
